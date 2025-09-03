@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: spring-boot-FoodApp
+spec:
+  selector:
+    app: spring-boot-FoodApp
+  ports:
+    - port: 80
+      targetPort: 8080
+  type: NodePort
