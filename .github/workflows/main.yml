@@ -27,9 +27,9 @@ jobs:
           password: ${{ secrets.DOCKERHUB_PASSWORD }}
  
       - name: Build Docker Image
-        run: docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/spring-boot-FoodApp:latest .
+        run: docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/spring-boot-foodapp:latest .
  
       - name: Push Docker image
-        run: docker push ${{ secrets.DOCKERHUB_USERNAME }}/spring-boot-FoodApp:latest
+        run: docker push ${{ secrets.DOCKERHUB_USERNAME }}/spring-boot-foodapp:latest
       
         
