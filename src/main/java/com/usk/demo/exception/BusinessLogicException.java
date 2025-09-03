@@ -1,0 +1,9 @@
+package com.usk.demo.exception;
+
+
+public class BusinessLogicException extends RuntimeException {
+    public BusinessLogicException(String message) {
+        super(message);
+    }
+}
+
